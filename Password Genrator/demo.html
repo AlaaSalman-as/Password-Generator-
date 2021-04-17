@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <title>Password Generator </title>
+</head>
+<body>
+<!----------------------------------------------------------------------------------------------------------->
+<section class="container-fluid d-flex justify-content-center">
+
+    <section class="row">
+
+        <section class="col-12 box text-center">
+
+            <section class="col-12 text-center py-3 mt-5">
+
+                <h1 class="title" class="">Password Generator </h1>
+                
+            </section>
+
+            <!-- <section class="py-3 col-12">
+                <i class="fas fa-copy"></i>
+                <input class="btn btn-success btn-lg col-12" id="result" >
+            </section> -->
+            <div class="input-group mb-3">
+                <input type="text" id="result" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-success" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Password Copied" type="button" id="button-addon2"><i class="fas fa-copy"></i></button>
+              </div>
+
+            <section class="py-3 col-12">
+
+                <div>
+                    <label for="length" class="col-9 text-left">Password Length </label>
+                    <input type="number" id="length" class="btn btn-light col-2">
+                </div>
+                <div>
+                    <label for="upperCaseLetter" class="col-9 text-left">Include Upper Case Letters </label>
+                    <input type="checkbox" id="upperCaseLetter" class="btn col-1 offset-1">
+                </div>
+                <div>
+                    <label for="lowerCaseLetter" class="col-9 text-left">Include Lower Case Letters </label>
+                    <input type="checkbox" id="lowerCaseLetter" class="btn col-1 offset-1">
+                </div>
+                <div>
+                    <label for="numbers" class="col-9 text-left">Include Numbers </label>
+                    <input type="checkbox" id="numbers" class="btn col-1 offset-1">
+                </div>
+                <div>
+                    <label for="symbols" class="col-9 text-left">Include Symbols </label>
+                    <input type="checkbox" id="symbols" class="btn col-1 offset-1">
+                </div>
+
+            </section>
+            <section class="py-3 co-12">
+
+                <button class="btn btn-success btn-lg" onclick="generatePassword()">Generate Password </button>
+            
+            </section>
+            
+
+        </section>
+
+    </section>
+
+</section>
+
+<section class="py-2 d text-center">
+    <h5 class="">Developed By . Alaa Odeh </h5>
+</section>
+<!----------------------------------------------------------------------------------------------------------->
+<script src="js/javascript.js"></script>
+<!-----Developed By .Alaa Odeh -->
+</body>
+</html>

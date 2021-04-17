@@ -1,0 +1,64 @@
+body{
+    font-family: 'Akaya Telivigala', 'cursive ';
+    margin:0px;
+    padding:10px;
+    background-color:#857DB1;
+    height:100vh !important;
+    font-size: 20px;
+    color:white;
+}
+h1::selection , label::selection , h5::selection{
+    background-color:black;
+    color:white;
+}
+h1:hover , label:hover ,h5:hover{
+    cursor: pointer;
+}
+@media and (max-width : 600px ){
+    body {
+        font-size: 15px;
+    }
+}
+.h1{
+    text-shadow:1px 1px 3px white;
+}
+.box{
+    position: relative;
+    top:15%;
+    background-color: #211858;  
+    border-top-left-radius:200px;
+    border-bottom-right-radius:200px;
+    box-shadow:3px 3px 3px #211858, -3px -3px 3px #211858;
+    transition: .5s ease-in-out;
+}
+.box:hover{
+    border-top-left-radius:0px;
+    border-bottom-right-radius:0px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+.title{
+    font-size:2.5rem;
+}
+.btn-success{
+    background-color:#0F083B;
+    border:solid 1px #0F083B;
+    transition: .5s ease-in-out;
+}
+.btn-success:hover{
+    background-color: #5C5393;
+    border: #5C5393;
+    box-shadow:1px 1px 1px #5C5393;
+}
+.btn-success:focus{
+    background-color: #5C5393;
+    border: #5C5393;
+    box-shadow:1px 1px 1px #5C5393;
+}
+.d{
+    position: relative;
+    top:18%;
+}
+h5{
+    color:#0F083B;
+}
